@@ -1,0 +1,57 @@
+   
+                 GUNICORN PROCESS
+-------------------------------------------------------------------------------------------
+   
+
+     sudo apt update 
+     sudo apt upgrade
+     sudo apt install python3-pip -y
+     sudo apt install python3-venv -y
+     python3 -m venv demo 
+     ls
+     source demo/bin/activate
+     pip install django
+     git clone https://github.com/Thilak1435/sample1
+     ls
+     cd sample1
+     cd django_web_app/
+     install gunicorn
+     pip install gunicorn
+     which gunicorn
+    [copy the path]
+     sudo apt install supervisor
+     cd django_web_app/
+     pwd
+     [Copy the path]
+     [Copy the path]
+
+     cd /etc/supervisor/conf.d
+     sudo nano gunicorn.conf
+     sudo supervisorctl reread
+     sudo supervisorctl update
+     sudo supervisorctl status
+
+     cd /bar/bin
+     ls
+     cd sample1
+     ls
+
+     sudo apt install nginx
+     cd /etc/nginx/sites-available
+     ls
+     sudo nano default
+
+     sudo service nginx restart
+     sudo service nginx status
+     cd /bar/bin
+     ls
+     cd sample1
+     ls
+     cd django_web_app/
+     python3 manage.py makemigrations
+     pip install crispy-forms-bootstrap2
+     python3 manage.py makemigrations
+     pip install pillow
+     python3 manage.py makemigrations
+     python3 manage.py migrate
+     python3 manage.py runserver 0.0.0.0:8000
